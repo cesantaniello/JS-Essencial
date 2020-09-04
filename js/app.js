@@ -1,19 +1,11 @@
 "use strict" //El modo estricto siempre debe estar en la línea 1
-/*
-var nombre = "Carlos"; //var es usada como variable global
 
-console.log(nombre);
+var edad = 37;
 
-function saludo(){
-    let nombre = "Eduardo"; //let es usado dentro del scope de la función
-    console.log(nombre);
+var cantidad = "100";
 
-    let edad = 37;
-    console.log(edad);
-};
+var nuevaCantidad = Number(cantidad); //Con Number se parsea de string a número
 
-console.log(edad);
+parseInt();
 
-saludo();
-*/
-const pi = 3.1416;
+parseFloat();
