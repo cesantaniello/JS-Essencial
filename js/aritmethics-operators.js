@@ -1,4 +1,4 @@
-//Operadores artiméticos
+//Operadores aritméticos
 
 var datoA = 10;
 var datoB = 20;
@@ -19,7 +19,7 @@ console.log('La multiplicacion de '+datoA+' * '+datoB+' es igual a: ', multiplic
 var division = datoA / datoB;
 console.log('La division de '+datoA+' / '+datoB+' es igual a: ', division);
 
-//Modulo
+//MODULO
 var modulo = datoA % datoB;
 console.log('El modulo de '+datoA+' % '+datoB+' es igual a: ', modulo);
 
