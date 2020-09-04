@@ -1,5 +1,5 @@
 "use strict" //El modo estricto siempre debe estar en la línea 1
-
+/*
 var nombre = "Carlos"; //var es usada como variable global
 
 console.log(nombre);
@@ -15,3 +15,5 @@ function saludo(){
 console.log(edad);
 
 saludo();
+*/
+const pi = 3.1416;
