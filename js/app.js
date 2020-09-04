@@ -23,3 +23,5 @@ var activo = false;
 var estado = Boolean(10 < 9);
 
 var fecha = new Date();
+
+var ambiente = Symbol('dev');
