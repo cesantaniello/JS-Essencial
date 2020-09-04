@@ -17,3 +17,7 @@ var comida = 'ceviche';
 var instruccion = "El platillo se llama 'ceviche'";
 
 var edadtxt = String(edad);
+
+var activo = false;
+
+var estado = Boolean(10 < 9);
