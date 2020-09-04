@@ -1,3 +1,4 @@
+"use strict"
 //Operadores aritméticos
 
 var datoA = 10;

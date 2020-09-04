@@ -1,3 +1,4 @@
+"use strict"
 //Operadores relacionales
 
 var datoA = 10;
