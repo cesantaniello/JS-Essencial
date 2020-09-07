@@ -72,7 +72,25 @@ cocinar(...ingredientesBase, "Arroz", "Pescado", "Chile");
 */
 
 //Función anónima ES6
+/*
 var saludar = function(nombre){
     let mensaje = "Hola, " + nombre;
     return mensaje;
 }
+*/
+
+//Callbacks
+
+function calcular(datoA, datoB, sumarCB, restarCB){
+    let suma = datoA + datoB;
+    let resta = datoA - datoB;
+
+    sumarCB(suma);
+    restarCB(resta);
+}
+
+calcular(2, 3, function (resultado){
+    console.log('Suma', resultado)
+}, function (resultado){
+    console.log('Resta', resultado)
+})
