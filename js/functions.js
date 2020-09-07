@@ -2,10 +2,12 @@
 
 //Funciones
 
-function saludar(){
-    let saludo = "¡Hola, mundo!";
-    //console.log(saludo);
-    return saludo;
+function saludar(nombre, edad){
+    console.log('Hola: ', nombre);
+    console.log('Edad: ', edad);
+    let resultado = nombre + " tiene " + edad + " años";
+    return resultado;
 }
 
-saludar();
+var mensaje = saludar("Carlos",37);
+console.log(mensaje);
