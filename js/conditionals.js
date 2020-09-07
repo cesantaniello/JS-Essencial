@@ -1,16 +1,18 @@
 "use strict"
 //Condicionales
 
-//If-Else
+//If-Else-If
 
 var datoA = 10;
 var datoB = 20;
 var resultado = "Sin datos";
 
 if (datoA > datoB){
-    resultado = "La condición se cumplió";
+    resultado = "La primera evaluación se cumplió";
+}else if (datoA == datoB){
+    resultado = "La segunda evaluación se cumplió";
 }else{
-    resultado = "La condición no se cumplió";
+    resultado = "No se cumplió ninguna evaluación";
 }
 
-console.log("El resultado de la evaluación if-else es: ", resultado);
+console.log("El resultado de la evaluación if-else-if es: ", resultado);
