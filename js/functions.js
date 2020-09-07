@@ -80,7 +80,7 @@ var saludar = function(nombre){
 */
 
 //Callbacks
-
+/*
 function calcular(datoA, datoB, sumarCB, restarCB){
     let suma = datoA + datoB;
     let resta = datoA - datoB;
@@ -94,3 +94,27 @@ calcular(2, 3, function (resultado){
 }, function (resultado){
     console.log('Resta', resultado)
 })
+*/
+
+//Funciones anónimas
+
+var saludar = nombre => "Hola " + nombre;
+console.log(saludar("Carlos"));
+
+var sumar = cantidad => cantidad+10
+console.log(sumar(10));
+
+var calcular = (datoA, datoB) => datoA + datoB
+console.log(calcular(10,15));
+
+var generar = (datoA, datoB) => {
+    let datoC = 5;
+    return datoA + datoB + datoC;
+}
+console.log(generar(10,15));
+
+var validar = () => {
+    return 'Validación correcta';
+}
+console.log(validar())
+
