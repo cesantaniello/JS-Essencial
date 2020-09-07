@@ -22,3 +22,10 @@ console.log("Los números 2 y 8 se unen para formar: ", concatNumComoTxt)
 ////CONCATENACIÓN DE TEXTO Y NÚMERO
 var concatTxtNum = datoA + "8";
 console.log("El número "+datoA+"usado como número y 8 se unen para formar: ", concatTxtNum);
+
+//Operador ternario
+
+//Condición ? TRUE : FALSE
+var resultado = datoA > datoB ? "Si es mayor" : "No es mayor";
+
+console.log("El resultado con el operador ternario o condicional es: ", resultado);
