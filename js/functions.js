@@ -46,7 +46,7 @@ cocinar(...ingredientesBase, "Arroz");
 
 
 //Parámetros SPREAD + REST
-
+/*
 function cocinar(ingrediente1, ingrediente2, ingrediente3, ...otros){
     console.log('Ingrediente 1: ', ingrediente1);
     console.log('Ingrediente 2: ', ingrediente2);
@@ -57,3 +57,22 @@ function cocinar(ingrediente1, ingrediente2, ingrediente3, ...otros){
 var ingredientesBase = ["Pollo","Tomate"];
 
 cocinar(...ingredientesBase, "Arroz", "Pescado", "Chile");
+*/
+
+//Funciones anónimas
+
+//Esta función anónima necesita tener commentado el "use strict" para funcionar
+/*
+(   
+    function(){
+        var mensaje = "Hola de nuevo";
+        console.log(mensaje);
+    }
+)()
+*/
+
+//Función anónima ES6
+var saludar = function(nombre){
+    let mensaje = "Hola, " + nombre;
+    return mensaje;
+}
