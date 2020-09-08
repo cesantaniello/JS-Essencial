@@ -34,6 +34,27 @@ window.addEventListener("keyup", function(event){
 */
 
 //Carga del documento
+/*
 window.addEventListener('load', function(){
     console.log('El contenido de la ventana se ha cargado'); //Muestra un mensaje cuando se ha cargado un documento
 })
+*/
+
+//Temporizadores
+
+//setInterval
+
+function setColor(){
+    var pagina = document.body;
+    pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "green" : "blue";
+}
+
+//setTimeout
+
+var temporizador = setInterval(function(){
+    setColor();
+}, 2000);
+
+function stopChangeColor(){
+    clearInterval(temporizador)
+}
