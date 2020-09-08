@@ -1,5 +1,7 @@
-//Eventos del mouse
+"use strict"
 
+//Eventos del mouse
+/*
 const boton = document.querySelector('.boton');
 
 boton.addEventListener('click', function(){
@@ -12,4 +14,20 @@ boton.addEventListener('mouseover', function(){
 
 boton.addEventListener('mouseout', function(){
     console.log("El mouse está fuera del botón");
+})
+*/
+
+//Eventos del teclado
+
+window.addEventListener("keydown", function(event){
+    console.log('Pulsando tecla');
+    console.log(String.fromCharCode(event.keyCode));//El evento keyCode muestra la tecla pulsada en código ASCII
+})                                                  //La función String.fromCharCode transforma el código ASCII a tecla visual                                    
+
+window.addEventListener("keypress", function(event){
+    console.log('Tecla pulsada');
+})
+
+window.addEventListener("keyup", function(event){
+    console.log('Tecla liberada');
 })
