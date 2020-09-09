@@ -49,6 +49,9 @@ console.log("La cadena de texto tiene: "+mensaje.length+" letras");
 //Métodos de generación, reemplazo y separación
 
 var mensaje = "Estoy aprendiendo JavaScript";
+var mensaje2 = " y programación";
+var total = 123456;
+
 var resultado;
 
 //repeat
@@ -65,6 +68,11 @@ var resultado;
 //resultado = mensaje.split(" ");
 
 //trim
-resultado = mensaje.trim();
+//resultado = mensaje.trim();
+
+
+//Métodos de transformación
+
+resultado = mensaje.concat(mensaje2, ' y tengo muchas ideas');
 
 console.log(resultado);
