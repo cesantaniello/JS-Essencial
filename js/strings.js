@@ -28,6 +28,18 @@ var resultado;
 
 //search | expresión regular: Busca con expresión regular la posición del string dado. 
                             //Si arroja como resultado -1 es porque no lo ha conseguido
-resultado = mensaje.search(/ja/i);
+//resultado = mensaje.search(/ja/i);
+
+//match
+//resultado = mensaje.match(/aprendiendo/gi);
+
+//substr:
+//resultado = mensaje.substr(6,11);
+
+//substring:
+//resultado = mensaje.substring(6,17);
+
+//charAt
+resultado = mensaje.charAt(0);
 
 console.log(resultado);
