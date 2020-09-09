@@ -47,13 +47,13 @@ console.log("La cadena de texto tiene: "+mensaje.length+" letras");
 
 
 //Métodos de generación, reemplazo y separación
-
+/*
 var mensaje = "Estoy aprendiendo JavaScript";
 var mensaje2 = " y programación";
 var total = 123456;
 
 var resultado;
-
+*/
 //repeat
 //resultado = mensaje.repeat(3);
 
@@ -73,6 +73,26 @@ var resultado;
 
 //Métodos de transformación
 
-resultado = mensaje.concat(mensaje2, ' y tengo muchas ideas');
+//resultado = mensaje.concat(mensaje2, ' y tengo muchas ideas');
 
-console.log(resultado);
+//console.log(resultado);
+
+
+//Plantillas y literales
+var lenguaje = 'JavaScript';
+var lenguaje2 = 'HTML';
+var mensaje = `Me gusta ${lenguaje} y su integración con ${lenguaje2}`;
+
+/*
+console.log(mensaje);
+*/
+
+//Mensaje multilínea
+
+var mensajeMultilinea = `
+    Hola mundo,
+    estoy aprendiendo
+    ${lenguaje} y me gusta
+    como se integra con HTML y CSS`;
+
+console.log(mensajeMultilinea);
