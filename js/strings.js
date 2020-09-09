@@ -14,8 +14,8 @@ console.log("La cadena de texto tiene: "+mensaje.length+" letras");
 
 //Métodos de búsqueda
 
-var mensaje = "Estoy aprendiendo JavaScript y estoy aprendiendo mucho";
-var resultado;
+//var mensaje = "Estoy aprendiendo JavaScript y estoy aprendiendo mucho";
+//var resultado;
 
 //indexOf   Busca el primer índice del string
 //resultado = mensaje.indexOf("aprendiendo");
@@ -30,6 +30,9 @@ var resultado;
                             //Si arroja como resultado -1 es porque no lo ha conseguido
 //resultado = mensaje.search(/ja/i);
 
+
+//Métodos de búsqueda
+
 //match
 //resultado = mensaje.match(/aprendiendo/gi);
 
@@ -40,6 +43,28 @@ var resultado;
 //resultado = mensaje.substring(6,17);
 
 //charAt
-resultado = mensaje.charAt(0);
+//resultado = mensaje.charAt(0);
+
+
+//Métodos de generación, reemplazo y separación
+
+var mensaje = "Estoy aprendiendo JavaScript";
+var resultado;
+
+//repeat
+//resultado = mensaje.repeat(3);
+
+//replace
+//resultado = mensaje.replace("JavaScript", "a programar");
+
+//slice
+//resultado = mensaje.slice(6);
+//resultado = mensaje.slice(6, 11);
+
+//split
+//resultado = mensaje.split(" ");
+
+//trim
+resultado = mensaje.trim();
 
 console.log(resultado);
