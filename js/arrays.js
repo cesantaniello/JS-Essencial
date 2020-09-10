@@ -1,4 +1,4 @@
-var platillos = ["ceviche", "tacos", "pasta"];
+var platillos = ["ceviche", "tacos", "pasta", "tostadas"];
 //var bebidas = new Array("Jamaica", "Chicha", "Pozol");
 
 //console.log(Array.isArray(platillos), bebidas)
@@ -55,7 +55,7 @@ var platillos = platillosHTML.map( platillo => platillo.textContent)
 
 
 //Ordenando un arreglo
-
+/*
 console.log('Antes: ', platillos);
 
 platillos.sort();
@@ -69,3 +69,13 @@ console.log('Después: ', platillos);
 platillos.reverse();
 
 console.log('Reversa de nuevo: ', platillos);
+*/
+
+
+//Desestructuración de arreglos
+
+//Transforma elementos de los arreglos en variables
+
+var [platillo1, platillo2, platillo3, platillo4] = platillos;
+
+console.log(platillo1, platillo2, platillo3, platillo4)
