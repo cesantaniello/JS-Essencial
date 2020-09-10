@@ -54,8 +54,16 @@ var menu = [{
 
 
 //Filtrar búsquedas
-var resultado = menu.filter(platillo => platillo.pais == "México");
+//var resultado = menu.filter(platillo => platillo.pais == "México");
 
 //console.log("Platillo número: ", numPlatillo);
+
+//Validación de datos
+
+var resultado = menu.some(platillo => platillo.precio <= 20);
+console.log('¿Hay platillos abajo de 20? ', resultado);
+
+var resultado = menu.every(platillo => platillo.precio <= 60);
+console.log('¿Hay platillos abajo de 60? ', resultado);
 
 console.log(resultado);
