@@ -20,12 +20,31 @@ for (let i in platillos){
 
 //var platoElegido = platillos.find(platillo => platillo == "pasta");
 
-var menu = [
-    {nombre: 'Ceviche', precio: 20, pais: 'Perú'},
-    {nombre: 'Tacos', precio: 10, pais: 'México'},
-    {nombre: 'Pasta', precio: 50, pais: 'Italia'}
+var menu = [{
+        nombre: 'Ceviche', 
+        precio: 20, 
+        pais: 'Perú'
+    },
+    {
+        nombre: 'Tacos', 
+        precio: 10, pais: 
+        'México'
+    },
+    {
+        nombre: 'Pasta', 
+        precio: 50, 
+        pais: 'Italia'
+    }
 ];
 
-var platoElegido = menu.find(platillo => platillo.nombre == "Pasta");
+//var platoElegido = menu.find(platillo => platillo.nombre == "Pasta");
 
-console.log(platoElegido);
+//console.log(platoElegido);
+
+//Busqueda de índice de elementos
+
+//var numPlatillo = platillos.findIndex(platillo => platillo == 'tacos');
+
+var numPlatillo = menu.findIndex(platillo => platillo.nombre == 'Tacos');
+
+console.log("Platillo número: ", numPlatillo);
