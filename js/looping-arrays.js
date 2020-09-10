@@ -27,13 +27,18 @@ var menu = [{
     },
     {
         nombre: 'Tacos', 
-        precio: 10, pais: 
-        'México'
+        precio: 10, 
+        pais: 'México'
     },
     {
         nombre: 'Pasta', 
         precio: 50, 
         pais: 'Italia'
+    },
+    {
+        nombre: 'Quesadillas', 
+        precio: 15, 
+        pais: 'México'
     }
 ];
 
@@ -45,6 +50,12 @@ var menu = [{
 
 //var numPlatillo = platillos.findIndex(platillo => platillo == 'tacos');
 
-var numPlatillo = menu.findIndex(platillo => platillo.nombre == 'Tacos');
+//var numPlatillo = menu.findIndex(platillo => platillo.nombre == 'Tacos');
 
-console.log("Platillo número: ", numPlatillo);
+
+//Filtrar búsquedas
+var resultado = menu.filter(platillo => platillo.pais == "México");
+
+//console.log("Platillo número: ", numPlatillo);
+
+console.log(resultado);
