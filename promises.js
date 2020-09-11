@@ -5,6 +5,7 @@
 
 
 var boton = document.getElementById('boton');
+var mensajes = document.getElementById('mensajes');
 var contenedor = document.getElementById('contenedor');
 var contBanderas = document.getElementById('banderas');
 
@@ -19,7 +20,12 @@ boton.addEventListener('click', function () {
         .then(data => data.json())
         .then(countries => {
             mostrarBanderas(countries);
-        });
+        })
+        .catch(error => {
+            mensajes.classList.toggle('hide');
+            mensajes.innerHTML = error;
+            setTimeout(() => mensajes.classList.toogle('hide'), 3000);
+        })
 
 });
 
