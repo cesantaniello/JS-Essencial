@@ -5,44 +5,39 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        h1 {
+            border-top: 2px solid #ccc;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 5px 5px 5px #ccc;
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            border-radius: 5px;
+            outline: none;
+            color: white;
+            font-weight: bold;
+            background-color: steelblue;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="title">Lorem ipsum</h1>
-    <button id="boton">¡Púlsame!</button>
-    <div id="container">
-        <p class="principal">
-            Parrafo 1 <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, tincidunt nec ante
-            ut, porta tempus dui. Integer consequat rhoncus tempus. Etiam nulla nisl, mattis a nisl pulvinar, tempor elementum
-            lectus. Morbi sed tortor luctus, faucibus dolor eu, ullamcorper arcu. Aenean condimentum quis nisi et malesuada.
-            Morbi nec mi et turpis condimentum suscipit quis vel arcu. Vestibulum at mi vitae urna gravida consectetur. Nam
-            suscipit ac purus a bibendum.
-        </p>
+    <button id="boton">Traer datos</button>
+    <div id="contenedor">
 
     </div>
 
-    <script>
-        //********************************
-        //*** Propiedades y métodos del BOM
-        var boton = document.getElementById('boton');
-        var principal = document.getElementsByClassName('principal')[0];
-
-        console.log('innerHeight: ', window.innerHeight);
-        console.log('innerWidth: ', window.innerWidth);
-
-        localStorage.setItem('contenido', 'Código y café es una gran combinación')
-
-
-        boton.addEventListener('click', function () {
-            var contenido = localStorage.getItem('contenido');
-            principal.innerHTML = contenido;
-
-            window.history.forward();
-             window.history.back();
-            window.history.go(3);
-        })
-    </script>
-
+    <script src="fetch.js"></script>
 </body>
 
 </html>
