@@ -1,9 +1,15 @@
 "use strict";
 
+var valor1 = 100;
+var valor2 = 20;
+
 try{
-    //var array = new Array(100000000000000);
-    //var x = y;
-    decodeURIComponent("http://%ominio.com");
+    if(valor1 > valor2){
+        console.log(`Mensaje de validación: ${valor1} si es mayor ${valor2}`);
+    }else{
+        throw new Error(`${valor1} no es mayor que ${valor2}`);
+    }
+
 } catch(error){
     console.log(error.message)
 }
